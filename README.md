@@ -1,1 +1,1 @@
-https://azerikt.github.io/goit-markup-hw-05/
+https://azerikt.github.io/goit-markup-hw-06/
