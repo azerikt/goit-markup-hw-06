@@ -445,55 +445,66 @@
           </svg>
         </button>
 
-        <div class="modal-main-box">
-          <p class="modal-text">Zostaw swoje dane w formularzu poniżej</p>
-          <form name="signup_form" autocomplete="on" novalidate>
-            <label>
-              <p class="label-names first-label">Imie</p>
+        <p class="modal-text">Zostaw swoje dane w formularzu poniżej</p>
+        <form name="signup_form" autocomplete="on" novalidate>
+          <label>
+            <p class="label-names first-label">Imie</p>
+            <input class="input-size" type="text" name="first-name" required />
+            <span>
+              <svg width="12" height="12" class="icon-modal">
+                <use href="./images/icons.svg#user-modal"></use>
+              </svg>
+            </span>
+          </label>
+          <label>
+            <p class="label-names">Telefon</p>
+            <input class="input-size" type="text" name="tel" required />
+            <span>
+              <svg width="12" height="12" class="icon-modal">
+                <use href="./images/icons.svg#tel-modal"></use>
+              </svg>
+            </span>
+          </label>
+          <label>
+            <p class="label-names">Email</p>
+            <input class="input-size" type="text" name="email" required />
+            <span>
+              <svg width="12" height="12" class="icon-modal">
+                <use href="./images/icons.svg#email-modal"></use>
+              </svg>
+            </span>
+          </label>
+
+          <label>
+            <p class="label-names">Komentarz</p>
+            <textarea
+              class="feedback"
+              name="feedback"
+              placeholder="Wprowadź tekst"
+            ></textarea>
+          </label>
+          <div class="modal-rulles">
+            <label class="check-box-modal">
+              <input class="check__input" type="checkbox" />
+              <span class="check__box"></span>
+            </label>
+            <!----
+            <label class="check-box-modal">
               <input
-                class="input-size"
-                type="first-name"
-                name="first-name"
-                required
+                type="checkbox"
+                name="rulles"
+                value="check/nochecked"
+                nochecked
               />
-            </label>
-
-            <label>
-              <p class="label-names">Telefon</p>
-              <input class="input-size" type="tel" name="tel" required />
-            </label>
-
-            <label>
-              <p class="label-names">Email</p>
-              <input class="input-size" type="email" name="email" required />
-            </label>
-
-            <label>
-              <p class="label-names">Komentarz</p>
-              <textarea
-                class="feedback"
-                name="feedback"
-                placeholder="Wprowadź tekst"
-              ></textarea>
-            </label>
-            <div class="modal-rulles">
-              <label class="check-box-mogal">
-                <input
-                  type="checkbox"
-                  name="rulles"
-                  value="check/nochecked"
-                  nochecked
-                />
-              </label>
-              <p class="modal-rulles-text">
-                Oświadczam iż akceptuję
-                <a href="#" class="modal-link">Regulamin</a> i
-                <a href="#" class="modal-link">Politykę Prywatności.</a>
-              </p>
-            </div>
-            <button class="btn-modal-submit" type="submit">Wyślij</button>
-          </form>
-        </div>
+            </label> -->
+            <p class="modal-rulles-text">
+              Oświadczam iż akceptuję
+              <a href="#" class="modal-link">Regulamin</a> i
+              <a href="#" class="modal-link">Politykę Prywatności.</a>
+            </p>
+          </div>
+          <button class="btn-modal-submit" type="submit">Wyślij</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
