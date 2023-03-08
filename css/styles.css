@@ -355,6 +355,12 @@ button {
   align-items: center;
   justify-content: center;
 }
+
+.order-close:hover {
+  fill: var(--acent-color);
+  transition: 250ms var(--cubic-bezier);
+}
+
 .backdrop.is-hidden {
   visibility: hidden;
   opacity: 0;
@@ -902,6 +908,7 @@ address {
 
 .input-size:focus + .icon-modal {
   fill: var(--acent-color);
+  transition: 250ms var(--cubic-bezier);
 }
 
 .icon-modal {
