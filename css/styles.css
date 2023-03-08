@@ -900,6 +900,10 @@ address {
   fill: var(--acent-color);
 }
 
+.input-size:focus + .icon-modal {
+  fill: var(--acent-color);
+}
+
 .icon-modal {
   position: relative;
   bottom: 14px;
