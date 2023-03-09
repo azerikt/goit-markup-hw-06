@@ -754,7 +754,6 @@ address {
 .label-names {
   color: var(--owner-text-color);
   font-family: Roboto;
-  /* margin-top: 10px;*/
   margin-bottom: 4px;
   font-weight: 400;
   font-size: 12px;
@@ -914,7 +913,6 @@ address {
   position: absolute;
   top: 50%;
   left: 15px;
-
   width: 18px;
   height: 18px;
 }
